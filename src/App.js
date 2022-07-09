@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import "./App.css";
-import Header from "./components/header/Header";
+import { Header } from "./components/header/Header";
+import { TaskCards } from "./components/task/TaskCards";
 
 function App() {
   const [items] = useState([...Array(3)].map((_, i) => ({ id: i, text: `item${i}` })));
@@ -12,10 +13,11 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app">
       <Header />
+      <TaskCards />
 
-      <div className="dragDropArea">
+      {/* <div className="dragDropArea">
         <DragDropContext onDragEnd={onDragEnd}>
           <Droppable droppableId="droppable">
             {(provided) => (
@@ -39,7 +41,7 @@ function App() {
             )}
           </Droppable>
         </DragDropContext>
-      </div>
+      </div> */}
     </div>
   );
 }

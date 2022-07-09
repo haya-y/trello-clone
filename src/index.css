@@ -17,3 +17,17 @@ header {
   margin-bottom: 50px;
   background-color: rgb(102, 94, 74);
 }
+
+.app {
+  background: url(../src/images/mountain.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.taskCard {
+  width: 250px;
+  padding: 10px;
+  margin: 10px 1%;
+  background-color: rgb(288, 228, 228);
+  border-radius: 5px;
+}
