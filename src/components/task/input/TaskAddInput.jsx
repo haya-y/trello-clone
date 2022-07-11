@@ -6,7 +6,6 @@ export const TaskAddInput = ({ inputText, setInputText, setTaskList, taskList })
     e.preventDefault();
     if (inputText === "") return;
     const taskId = uuidv4();
-    console.log({ taskId });
     setTaskList([
       ...taskList,
       {
